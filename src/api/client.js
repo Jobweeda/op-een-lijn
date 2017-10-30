@@ -4,7 +4,7 @@ import hooks from 'feathers-hooks'
 import auth from 'feathers-authentication-client'
 import superagent from 'superagent'
 
-const FEATHERS_TOKEN_KEY = 'recipes-api'
+const FEATHERS_TOKEN_KEY = 'opeenlijn-api'
 const host = 'http://localhost:3030'
 
 const feathersClient = feathers()
