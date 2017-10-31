@@ -6,7 +6,7 @@ class HomePage extends PureComponent {
     return(
       <div className='home-page'>
         <div className='row'>
-        <h1> Patienten </h1>
+        <h1> COPD schema Op één Lijn </h1>
         </div>
       </div>
     )
