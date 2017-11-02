@@ -11,8 +11,8 @@ export default (patientData) => {
 
     const backend = api.service('patients')
 
-    api.app.authenticate()
-      .then(() => {
+    // api.app.authenticate()
+    //   .then(() => {
         backend.create(patientData)
           .then((result) => {
             console.log(result)
@@ -27,6 +27,6 @@ export default (patientData) => {
           .catch((error) => {
             console.log(error)
           })
-      })
+      // })
   }
 }

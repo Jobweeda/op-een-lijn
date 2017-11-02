@@ -8,6 +8,7 @@ import { Router, Route, IndexRoute } from 'react-router';
 import store, { history } from './store';
 import HomePage from './containers/HomePage';
 import PatientPage from './containers/patient/PatientPage';
+import CreatePatient from './containers/patient/CreatePatient';
 
 ReactDOM.render(
   <Provider store={store}>
@@ -15,6 +16,7 @@ ReactDOM.render(
      <Route path="/" component={App}>
        <IndexRoute component={HomePage} />
         <Route path="/patients" component={PatientPage} />
+        <Route path="/create-patient" component={CreatePatient} />
      </Route>
    </Router>
   </Provider>,
