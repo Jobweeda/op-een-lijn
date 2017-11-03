@@ -13,7 +13,6 @@ export default (state = [], { type, payload } = {}) => {
     return [newPatient].concat(state)
 
   case PATIENT_UPDATED :
-  debugger
     return { ...state, patientId: payload }
 
   default :
