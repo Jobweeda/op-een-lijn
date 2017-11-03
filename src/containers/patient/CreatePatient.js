@@ -13,12 +13,12 @@ class CreatePatient extends PureComponent {
 
   submitForm(event){
     event.preventDefault()
-    const { firstName, lastName, email, phone } = this.refs
+    const { firstName, lastName, email, phoneNumber } = this.refs
     const newPatient = {
       firstName: firstName.value,
       lastName: lastName.value,
       email: email.value,
-      phone: phone.value,
+      phoneNumber: phoneNumber.value,
     }
     this.props.createPatient(newPatient)
   }
@@ -65,7 +65,7 @@ class CreatePatient extends PureComponent {
                 <input
                 className='form-control'
                 type='text'
-                ref='phone'
+                ref='phoneNumber'
                 placeholder='Telefoon nummer'/>
               </div>
             </div>
