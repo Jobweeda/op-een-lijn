@@ -11,10 +11,12 @@ export default (patientId, patientData) => {
 
     const backend = api.service('patients')
 
-    api.authenticate()
-      .then(() => {
+    // api.authenticate()
+    //   .then(() => {
         backend.patch(patientId, { type: PATIENT_UPDATE, payload: patientData})
+
           .then((result) => {
+
             console.log(result)
                 dispatch({
                   type: PATIENT_UPDATED,
@@ -25,6 +27,6 @@ export default (patientId, patientData) => {
           .catch((error) => {
             console.log(error)
           })
-      })
+      // })
   }
 }
