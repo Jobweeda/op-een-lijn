@@ -21,8 +21,6 @@ class EditPatient extends PureComponent {
       email: email.value,
       phoneNumber: phoneNumber.value,
     }
-    console.log(id)
-    console.log(patientData)
     this.props.updatePatient(id, patientData)
   }
 
@@ -43,8 +41,8 @@ class EditPatient extends PureComponent {
                 className="form-control"
                 type="text"
                 ref="firstName"
-                placeholder="voornaam patient"
-                value={currentPatient.firstName}
+                placeholder={currentPatient.firstName}
+
                 />
               </div>
             </div>
@@ -55,8 +53,8 @@ class EditPatient extends PureComponent {
                 className='form-control'
                 type='text'
                 ref='lastName'
-                placeholder='achternaam patient'
-                value={currentPatient.lastName}/>
+                placeholder={currentPatient.lastName}
+                />
               </div>
             </div>
             <div className='form-group row'>
@@ -66,8 +64,8 @@ class EditPatient extends PureComponent {
                 className='form-control'
                 type='text'
                 ref='email'
-                placeholder='email-adres(optioneel)'
-                value={currentPatient.email}/>
+                placeholder={currentPatient.email}
+                />
               </div>
             </div>
             <div className='form-group row'>
@@ -77,8 +75,8 @@ class EditPatient extends PureComponent {
                 className='form-control'
                 type='text'
                 ref='phoneNumber'
-                placeholder='Telefoon nummer'
-                value={currentPatient.phoneNumber}/>
+                placeholder={currentPatient.phoneNumber}
+                />
               </div>
             </div>
             <input className="btn-submit formItem" type="submit" value="Wijzig Patient" />

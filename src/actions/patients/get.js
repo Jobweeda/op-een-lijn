@@ -11,7 +11,6 @@ export default(patientId) => {
 
     backend.get(patientId)
       .then((result) => {
-        debugger
         console.log(result)
         dispatch({
           type: GET_PATIENT,

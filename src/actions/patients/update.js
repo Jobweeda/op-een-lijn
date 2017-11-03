@@ -22,7 +22,7 @@ export default (patientId, patientData) => {
                   type: PATIENT_UPDATED,
                   payload: result
                 })
-                history.push(`/patients/${patientId}`)
+                history.replace(`/patients/${patientId}`)
               })
           .catch((error) => {
             console.log(error)
