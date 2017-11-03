@@ -7,6 +7,7 @@ class PatientPage extends PureComponent {
 
 componentWillMount(){
   this.props.fetchPatients()
+
 }
 
 
@@ -14,13 +15,15 @@ renderPatient(patient, index){
 
    return (
      <div className='patient-fullname'>
-     <p>{patient.lastName}, {patient.firstName}</p>
-     <button className="btn-patient"><Link to={`/patients/${patient._id}`} className="link">Edit Patient</Link></button>
+     <p>{patient.lastName}, {patient.firstName}<button className="btn-patient"><Link to={`/patients/${patient._id}`} className="link">Edit Patient</Link></button></p>
+
      </div>
    )
 }
 
 render() {
+   const currentPatient = null
+    if (currentPatient) return null
   const patients = this.props.patients
     if (!patients) return null
 

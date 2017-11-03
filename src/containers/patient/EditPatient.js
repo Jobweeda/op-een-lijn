@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import updatePatient from '../../actions/patients/update';
 import getPatient from '../../actions/patients/get';
-
+import { Link } from 'react-router'
 
 
 class EditPatient extends PureComponent {
@@ -27,10 +27,6 @@ class EditPatient extends PureComponent {
   }
 
   render() {
-    // if (!this.props.currentPatient) return null
-    // const patient = this.props.currentPatient
-
-
     const  {currentPatient}  = this.props
         if(!currentPatient) return null
 
@@ -48,7 +44,7 @@ class EditPatient extends PureComponent {
                 type="text"
                 ref="firstName"
                 placeholder="voornaam patient"
-                defaultValue={currentPatient.firstName}
+                value={currentPatient.firstName}
                 />
               </div>
             </div>
@@ -60,7 +56,7 @@ class EditPatient extends PureComponent {
                 type='text'
                 ref='lastName'
                 placeholder='achternaam patient'
-                defaultValue={currentPatient.lastName}/>
+                value={currentPatient.lastName}/>
               </div>
             </div>
             <div className='form-group row'>
@@ -71,7 +67,7 @@ class EditPatient extends PureComponent {
                 type='text'
                 ref='email'
                 placeholder='email-adres(optioneel)'
-                defaultValue={currentPatient.email}/>
+                value={currentPatient.email}/>
               </div>
             </div>
             <div className='form-group row'>
@@ -82,11 +78,13 @@ class EditPatient extends PureComponent {
                 type='text'
                 ref='phoneNumber'
                 placeholder='Telefoon nummer'
-                defaultValue={currentPatient.phoneNumber}/>
+                value={currentPatient.phoneNumber}/>
               </div>
             </div>
             <input className="btn-submit formItem" type="submit" value="Wijzig Patient" />
+
           </form>
+          <button className="btn-back"><Link to={`/patients`}>Back to patients</Link></button>
         </div>
       </div>
     )
