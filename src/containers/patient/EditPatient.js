@@ -33,7 +33,7 @@ class EditPatient extends PureComponent {
 
     const  {currentPatient}  = this.props
         if(!currentPatient) return null
-debugger
+
     return(
 
       <div className='background'>
