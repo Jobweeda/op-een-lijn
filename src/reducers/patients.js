@@ -13,7 +13,7 @@ export default (state = [], { type, payload } = {}) => {
     return [newPatient].concat(state)
 
   case PATIENT_UPDATED :
-  const newState = state.filter(patient => patient._id !== payload._id)
+    const newState = state.filter(patient => patient._id !== payload._id)
     newState.concat(payload)
     return newState
 

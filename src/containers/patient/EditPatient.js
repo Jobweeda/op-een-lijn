@@ -82,7 +82,8 @@ class EditPatient extends PureComponent {
             <input className="btn-submit formItem" type="submit" value="Wijzig Patient" />
 
           </form>
-          <button className="btn-back"><Link to={`/patients`}>Back to patients</Link></button>
+          <button className="btn-back"><Link to={`/patients`}>Back to Patients</Link></button>
+          <button className="btn-back"><Link to={`/`}>Back to Home</Link></button>
         </div>
       </div>
     )

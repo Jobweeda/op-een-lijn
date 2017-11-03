@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import createPatient from '../../actions/patients/create';
+import { Link } from 'react-router';
 
 
 
@@ -72,9 +73,12 @@ class CreatePatient extends PureComponent {
             <input className="btn-submit formItem" type="submit" value="Add Patient" />
           </form>
         </div>
+        <button className="btn-back"><Link to={`/`}>Back to Home</Link></button>
       </div>
     )
+
   }
+
 }
 const mapStateToProps = ({ patients }) => ({ patients })
 export default connect(mapStateToProps, { createPatient })(CreatePatient)
