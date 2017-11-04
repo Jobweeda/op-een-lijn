@@ -22,10 +22,71 @@ class HomePage extends PureComponent {
       <div className='home-page'>
         <div className='row'>
         <h1 className='homepage-title'> COPD schema Op één Lijn </h1>
+        </div>
+         <div className='row-months'>
+          <div className='col-md-2'>
+            <button className='month-button'>Januari</button>
+          </div>
+          </div>
+           <div className='row-months'>
+          <div className='col-md-2'>
+            <button className='month-button'>Februari</button>
+          </div>
+          </div>
+           <div className='row-months'>
+          <div className='col-md-2'>
+            <button className='month-button'>Maart</button>
+          </div>
+          </div>
+           <div className='row-months'>
+          <div className='col-md-2'>
+            <button className='month-button'>April</button>
+          </div>
+          </div>
+           <div className='row-months'>
+          <div className='col-md-2'>
+            <button className='month-button'>Mei</button>
+          </div>
+          </div>
+           <div className='row-months'>
+          <div className='col-md-2'>
+            <button className='month-button'>Juni</button>
+          </div>
+          </div>
+           <div className='row-months'>
+          <div className='col-md-2'>
+            <button className='month-button'>Juli</button>
+          </div>
+          </div>
+           <div className='row-months'>
+          <div className='col-md-2'>
+            <button className='month-button'>Augustus</button>
+          </div>
+          </div>
+           <div className='row-months'>
+          <div className='col-md-2'>
+            <button className='month-button'>September</button>
+          </div>
+          </div>
+           <div className='row-months'>
+          <div className='col-md-2'>
+            <button className='month-button'>Oktober</button>
+          </div>
+          </div>
+           <div className='row-months'>
+          <div className='col-md-2'>
+            <button className='month-button'>November</button>
+          </div>
+          </div>
+           <div className='row-months'>
+          <div className='col-md-2'>
+            <button className='month-button'>December</button>
+          </div>
+          </div>
+           <div className='row-links'>
         <button className='btn-back'><Link to={`/create-patient`}>Voeg een patient toe!</Link></button>
         <button className='btn-back'><Link to={`/patients`}>Toon alle patienten</Link></button>
         </div>
-
       </div>
     )
   }
