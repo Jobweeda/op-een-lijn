@@ -14,6 +14,7 @@ class CreatePatient extends PureComponent {
 
   submitForm(event){
     event.preventDefault()
+
     const { firstName, lastName, email, phoneNumber } = this.refs
     const newPatient = {
       firstName: firstName.value,
@@ -80,5 +81,5 @@ class CreatePatient extends PureComponent {
   }
 
 }
-const mapStateToProps = ({ patients }) => ({ patients })
+const mapStateToProps = ({ newPatient }) => ({ newPatient })
 export default connect(mapStateToProps, { createPatient })(CreatePatient)
