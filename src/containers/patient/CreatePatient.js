@@ -5,6 +5,7 @@ import { Link } from 'react-router';
 
 
 
+
 class CreatePatient extends PureComponent {
   constructor() {
     super()

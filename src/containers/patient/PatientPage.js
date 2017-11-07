@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import fetchPatients from '../../actions/patients/fetch';
 import { Link } from 'react-router';
-import './PatientPage.css'
+import '../../styles/PatientPage.css'
 
 class PatientPage extends PureComponent {
 
@@ -21,7 +21,7 @@ renderPatient(patient, index){
        <div className='patient-buttons'>
          <p className='patient-attr'>{patient.lastName}, {patient.firstName}</p>
 
-         <button className='btn-patient'><Link to={``} className='link'>Voeg een afspraak toe</Link></button>
+         <button className='btn-patient'><Link to={`/${patient._id}/appointments`} className='link'>Voeg een afspraak toe</Link></button>
          <button className="btn-patient"><Link to={`/patients/${patient._id}`} className="link">Pas patient aan</Link></button>
          </div>
        </div>

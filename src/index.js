@@ -11,6 +11,7 @@ import HomePage from './containers/HomePage';
 import PatientPage from './containers/patient/PatientPage';
 import CreatePatient from './containers/patient/CreatePatient';
 import EditPatient from './containers/patient/EditPatient';
+import PatientAppointments from './containers/appointments/PatientAppointments';
 
 
 
@@ -22,6 +23,7 @@ ReactDOM.render(
         <Route path="/patients" component={PatientPage} />
         <Route path="/create-patient" component={CreatePatient} />
         <Route path="/patients/:patientId" component={EditPatient} />
+        <Route path="/:patientId/appointments" component={PatientAppointments} />
      </Route>
    </Router>
   </Provider>,

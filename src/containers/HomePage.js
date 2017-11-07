@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import './HomePage.css'
+import '../styles/HomePage.css'
 import { Link } from 'react-router'
 
 class HomePage extends PureComponent {
