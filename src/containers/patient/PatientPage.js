@@ -16,15 +16,17 @@ renderPatient(patient, index){
 
    return (
      <div key={index} className="patient col-md-4 col-sm-6">
+     <div className='patient-box'>
        <div className='patient-fullname'>
+       <div className='patient-buttons'>
          <p className='patient-attr'>{patient.lastName}, {patient.firstName}</p>
 
-         <div className='patient-buttons'>
          <button className='btn-patient'><Link to={``} className='link'>Voeg een afspraak toe</Link></button>
          <button className="btn-patient"><Link to={`/patients/${patient._id}`} className="link">Pas patient aan</Link></button>
          </div>
        </div>
-</div>
+       </div>
+     </div>
    )
 }
 

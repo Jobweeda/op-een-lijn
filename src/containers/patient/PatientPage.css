@@ -3,6 +3,10 @@ button.btn-patient {
   display: flex-row;
   position: right; }
 
+.patient-box {
+  max-width: 80%;
+  margin: auto; }
+
 .patient-attr {
   max-width: 50%;
   text-align: left;
