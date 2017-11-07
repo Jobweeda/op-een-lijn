@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import createPatient from '../../actions/patients/create';
 import { Link } from 'react-router';
+import DatePicker from 'material-ui/DatePicker';
 
 
 
@@ -22,6 +23,7 @@ class CreatePatient extends PureComponent {
       lastName: lastName.value,
       email: email.value,
       phoneNumber: phoneNumber.value,
+      appointmentIds: this.refs.appointmentIds.refs.input.input.value,
     }
     this.props.createPatient(newPatient)
   }
@@ -70,6 +72,13 @@ class CreatePatient extends PureComponent {
                 type='text'
                 ref='phoneNumber'
                 placeholder='Telefoon nummer'/>
+              </div>
+            </div>
+            <div className='form-group row'>
+              <label className='col-2 col-form-label'>Afspraak</label>
+              <div className='col-10'>
+                <DatePicker
+                ref="appointmentIds" />
               </div>
             </div>
             <input className="btn-submit formItem" type="submit" value="Add Patient" />
