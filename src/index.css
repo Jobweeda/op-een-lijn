@@ -9,3 +9,10 @@ body {
   font-family: Helvetica;
   font-size: 15px;
   margin: auto; }
+
+.btn-patient {
+  padding: 5px;
+  background: white;
+  font-family: Helvetica;
+  font-size: 15px;
+  margin: auto; }
